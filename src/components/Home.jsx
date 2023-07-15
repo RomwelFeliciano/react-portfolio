@@ -6,7 +6,7 @@ const Home = () => {
   const profile = {
     name: "Romwel Reyes Feliciano",
     description:
-      "A front-end developer who is a Bataan Peninsula State University graduate and is currently an intern at Kloudtech. I continued to acquire various web designs and layouts and the necessary programming skills every day at that time. I also concentrate on honing my proficiency with popular frameworks and libraries.",
+      "A front-end developer who graduated at Bataan Peninsula State University. At the moment, I am working as an intern at Kloudtech as I continue to learn necessary programming skills needed. In addition, I am also acquiring knowledge about various web designs and layout. Consequently, I am striving to hone my proficiency in using popular frameworks and libraries.",
   };
 
   return (
