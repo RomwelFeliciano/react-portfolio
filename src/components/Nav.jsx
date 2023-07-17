@@ -5,8 +5,8 @@ import { AiOutlineClose } from "react-icons/ai";
 
 const Nav = () => {
   let Links = [
-    { name: "Home", link: "/" },
-    { name: "Skills", link: "/" },
+    { name: "Home", link: "#Home" },
+    { name: "Skills", link: "#Skills" },
     { name: "Experience", link: "/" },
     { name: "Projects", link: "/" },
     { name: "Contact", link: "/" },
@@ -18,7 +18,7 @@ const Nav = () => {
     <div className="shadow-md w-full fixed top-0 left-0 z-10">
       <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
         <div className="font-bold text-2xl cursor-pointer flex justify-between items-center">
-          <span>Logo ni Romwel</span>
+          <img className="w-14" src="logo.png" alt="" />
 
           <div
             className="text-3xl right-8 top-6 cursor-pointer md:hidden"
