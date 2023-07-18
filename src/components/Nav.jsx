@@ -42,7 +42,7 @@ const Nav = () => {
               </a>
             </li>
           ))}
-          <Button>Download CV</Button>
+          <Button>Resume</Button>
         </ul>
       </div>
     </div>
