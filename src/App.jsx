@@ -2,6 +2,7 @@ import React from "react";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
 import Skills from "./components/Skills";
+import Experiences from "./components/Experiences";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <main className="flex flex-col justify-center items-center">
         <Home />
         <Skills />
+        <Experiences />
       </main>
     </div>
   );
