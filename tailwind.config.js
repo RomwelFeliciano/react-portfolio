@@ -13,7 +13,8 @@ export default {
       colors:{
         main: "#00ADB5",
         second: "#393E46",
-        body: "#EEEEEE"
+        body: "#EEEEEE",
+        accent: "#1D1D1D"
       }
     },
   },
