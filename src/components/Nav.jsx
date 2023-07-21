@@ -42,7 +42,9 @@ const Nav = () => {
               </a>
             </li>
           ))}
-          <Button>Resume</Button>
+          <a href="./public/resume.pdf" target="_blank">
+            <Button>Resume</Button>
+          </a>
         </ul>
       </div>
     </div>
