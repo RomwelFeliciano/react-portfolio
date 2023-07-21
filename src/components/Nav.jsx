@@ -7,7 +7,7 @@ const Nav = () => {
   let Links = [
     { name: "Home", link: "#Home" },
     { name: "Skills", link: "#Skills" },
-    { name: "Experience", link: "/" },
+    { name: "Experience", link: "#Experience" },
     { name: "Projects", link: "/" },
     { name: "Contact", link: "/" },
   ];
