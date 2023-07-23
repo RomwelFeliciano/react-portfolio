@@ -1,6 +1,5 @@
 import React from "react";
-import { frontend } from "./FrontendSkills";
-import { backend } from "./BackendSkills";
+import { frontend, backend } from "./Data";
 
 const Skills = () => {
   return (

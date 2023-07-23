@@ -8,8 +8,8 @@ const Nav = () => {
     { name: "Home", link: "#Home" },
     { name: "Skills", link: "#Skills" },
     { name: "Experience", link: "#Experience" },
-    { name: "Projects", link: "/" },
-    { name: "Contact", link: "/" },
+    { name: "Projects", link: "#Projects" },
+    { name: "Contact", link: "#Contact" },
   ];
 
   let [open, setOpen] = useState(false);
@@ -18,7 +18,9 @@ const Nav = () => {
     <div className="shadow-md w-full fixed top-0 left-0 z-10">
       <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
         <div className="font-bold text-2xl cursor-pointer flex justify-between items-center">
-          <a href="#Home"><img className="w-14" src="logo.png" alt="" /></a>
+          <a href="#Home">
+            <img className="w-14" src="logo.png" alt="" />
+          </a>
 
           <div
             className="text-3xl right-8 top-6 cursor-pointer md:hidden"
@@ -42,7 +44,7 @@ const Nav = () => {
               </a>
             </li>
           ))}
-          <a href="./public/resume.pdf" target="_blank">
+          <a href="/resume.pdf" download="Resume-Romwel-Feliciano">
             <Button>Resume</Button>
           </a>
         </ul>

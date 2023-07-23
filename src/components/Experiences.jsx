@@ -1,18 +1,16 @@
 import React, { useState } from "react";
-import { education } from "./EducationExperience";
-import { work } from "./WorkExperience";
+import { education, work } from "./Data";
 
 const Experiences = () => {
-
   const [showContent, setShowContent] = useState("education");
 
-  const handleShowEducation = () =>{
+  const handleShowEducation = () => {
     setShowContent("education");
-  }
-  
-  const handleShowWork = () =>{
+  };
+
+  const handleShowWork = () => {
     setShowContent("work");
-  }
+  };
 
   return (
     <section
@@ -23,10 +21,16 @@ const Experiences = () => {
         <h2 className="text-xl text-second">What Experiences I Have in Life</h2>
         <h1 className="text-2xl text-main font-bold">My Journey</h1>
         <div className="flex gap-5 items-center justify-center my-2">
-          <button className="px-4 py-2 bg-accent text-main rounded-md" onClick={handleShowEducation}>
+          <button
+            className="px-4 py-2 bg-accent text-main rounded-md"
+            onClick={handleShowEducation}
+          >
             Education
           </button>
-          <button className="px-4 py-2 bg-accent text-main rounded-md" onClick={handleShowWork}>
+          <button
+            className="px-4 py-2 bg-accent text-main rounded-md"
+            onClick={handleShowWork}
+          >
             Experience
           </button>
         </div>
@@ -35,7 +39,8 @@ const Experiences = () => {
         {/* Cards to map */}
 
         {/* Cards for Education */}
-        {showContent === "education" && (education &&
+        {showContent === "education" &&
+          education &&
           education.map((educ) => (
             <div
               className="w-full flex flex-col justify-center items-start rounded-sm bg-white shadow-lg lg:flex-row lg:justify-start lg:items-center"
@@ -59,16 +64,18 @@ const Experiences = () => {
                 <ul className="ml-5">
                   {educ.awards &&
                     educ.awards.map((award) => (
-                      <li className="list-disc" key={award}>{award}</li>
+                      <li className="list-disc" key={award}>
+                        {award}
+                      </li>
                     ))}
                 </ul>
               </div>
             </div>
-          )))}
-        
+          ))}
 
         {/* Cards for Work */}
-        {showContent === "work" && (work &&
+        {showContent === "work" &&
+          work &&
           work.map((job) => (
             <div
               className="w-full flex flex-col justify-center items-start rounded-sm bg-white shadow-lg lg:flex-row lg:justify-start lg:items-center"
@@ -87,16 +94,18 @@ const Experiences = () => {
                 </h2>
                 <h3 className="mb-2 text-md">{job.role}</h3>
                 <h3 className="mb-2 text-md">{job.year}</h3>
-                <h3 className="mb-2 text-md">Academic Awards</h3>
+                <h3 className="mb-2 text-md">Tasks</h3>
                 <ul className="ml-5">
                   {job.tasks &&
                     job.tasks.map((task) => (
-                      <li className="list-disc" key={task}>{task}</li>
+                      <li className="list-disc" key={task}>
+                        {task}
+                      </li>
                     ))}
                 </ul>
               </div>
             </div>
-          )))}
+          ))}
       </div>
     </section>
   );
