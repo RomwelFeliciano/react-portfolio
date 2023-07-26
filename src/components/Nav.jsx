@@ -9,7 +9,7 @@ const Nav = () => {
     { name: "Skills", link: "#Skills" },
     { name: "Experience", link: "#Experience" },
     { name: "Projects", link: "#Projects" },
-    { name: "Contact", link: "#Contact" },
+    // { name: "Contact", link: "#Contact" },
   ];
 
   let [open, setOpen] = useState(false);
@@ -30,7 +30,7 @@ const Nav = () => {
           </div>
         </div>
         <ul
-          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
+          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white shadow-lg md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
             open ? "top-16 " : "top-[-490px]"
           }`}
         >
@@ -44,9 +44,9 @@ const Nav = () => {
               </a>
             </li>
           ))}
-          <a href="/resume.pdf" download="Resume-Romwel-Feliciano">
+          {/* <a href="/resume.pdf" download="Resume-Romwel-Feliciano">
             <Button>Resume</Button>
-          </a>
+          </a> */}
         </ul>
       </div>
     </div>
