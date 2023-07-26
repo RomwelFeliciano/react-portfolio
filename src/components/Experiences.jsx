@@ -18,17 +18,23 @@ const Experiences = () => {
       className="container flex flex-col justify-center items-center p-2 md:p-10 min-h-screen"
     >
       <div className="flex flex-col justify-center items-center gap-2">
-        <h2 className="text-xl text-second">What Experiences I Have in Life</h2>
+        <h2 className="text-xl text-second">Experiences I Have in Life</h2>
         <h1 className="text-2xl text-main font-bold">My Journey</h1>
         <div className="flex gap-5 items-center justify-center my-2">
           <button
-            className="px-4 py-2 bg-accent text-main rounded-md"
+            className={
+              "px-4 py-2 text-main rounded-md border-solid border-2 border-accent " +
+              (showContent === "education" ? "bg-accent" : "")
+            }
             onClick={handleShowEducation}
           >
             Education
           </button>
           <button
-            className="px-4 py-2 bg-accent text-main rounded-md"
+            className={
+              "px-4 py-2 text-main rounded-md border-solid border-2 border-accent " +
+              (showContent === "work" ? "bg-accent" : "")
+            }
             onClick={handleShowWork}
           >
             Experience
