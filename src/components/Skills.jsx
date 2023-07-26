@@ -8,7 +8,7 @@ const Skills = () => {
       className="container flex flex-col justify-center items-center p-2 md:p-10 min-h-screen"
     >
       <div className="flex flex-col justify-center items-center gap-2">
-        <h2 className="text-xl text-second">What Skills I Have</h2>
+        <h2 className="text-xl text-second">Skills I Have</h2>
         <h1 className="text-2xl text-main font-bold">My Expertise</h1>
       </div>
       <div className="w-full mt-5 grid grid-cols-1 md:grid-cols-2 gap-5 p-3">
@@ -26,7 +26,7 @@ const Skills = () => {
                   <h2>
                     {skill.name} - {skill.level}
                   </h2>
-                  <h2>{skill.experience} experience in school</h2>
+                  <h2>{skill.experience} experience</h2>
                 </div>
               </div>
             ))}
@@ -46,7 +46,7 @@ const Skills = () => {
                   <h2>
                     {skill.name} - {skill.level}
                   </h2>
-                  <h2>{skill.experience} experience in school</h2>
+                  <h2>{skill.experience} experience</h2>
                 </div>
               </div>
             ))}
