@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
 import Skills from "./components/Skills";
@@ -15,7 +16,7 @@ const App = () => {
         <Skills />
         <Experiences />
         <Projects />
-        <ContactUs />
+        {/* <ContactUs /> */}
       </main>
     </div>
   );

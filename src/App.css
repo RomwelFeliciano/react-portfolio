@@ -1,0 +1,17 @@
+div.animate-soft{
+    animation: translateAnim 1000ms linear infinite alternate;
+}
+
+@keyframes translateAnim {
+    0% {
+        transform: translateY(-10px)
+    }
+
+    50% {
+        transform: translateY(0)
+    }
+
+    100% {
+        transform: translateY(10px)
+    }
+}
