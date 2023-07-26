@@ -37,14 +37,14 @@ export const frontend = [
   {
     name: "Tailwind CSS",
     level: "Basic",
-    experience: "4 months",
+    experience: "5 months",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
   },
   {
     name: "React",
     level: "Basic",
-    experience: "4 months",
+    experience: "5 months",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   },
@@ -146,53 +146,51 @@ export const work = [
   },
 ];
 
-const projects = [
+export const projects = [
   {
-    title: "Kloudtrack",
+    title: "Kloudtrack Web Application",
     description:
       "A Weather Monitoring Application that receives real time data from the  weather station of Kloudtech.",
     type: "Web Application",
-    image: "/public/image1.jpeg",
+    image: "/public/web1.png",
+    tools: ["HTML", "CSS", "JavaScript", "jQuery", "ChartJS", "Bootstrap"],
+  },
+  {
+    title: "Kloudtech Business Website",
+    description:
+      "A Business Website of Kloudtech to show who and what is the company all about.",
+    type: "Website",
+    image: "/public/web1.png",
     tools: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"],
   },
   {
-    title: "Kloudtrack",
-    description:
-      "A Weather Monitoring Application that receives real time data from the  weather station of Kloudtech.",
+    title: "Pic-Sell Planet Web Application",
+    description: "A Online Multimedia Services for Photographers.",
     type: "Web Application",
-    image: "/public/image1.jpeg",
-    tools: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"],
+    image: "/public/web1.png",
+    tools: ["HTML", "CSS", "JavaScript", "jQuery", "PHP", "MySQL"],
   },
   {
-    title: "Kloudtrack",
+    title: "Guess the Number",
     description:
-      "A Weather Monitoring Application that receives real time data from the  weather station of Kloudtech.",
+      "A PHP Project that lets the user login and play the game to guess the right number, it has 3 difficulties (easy, medium, hard).",
     type: "Web Application",
-    image: "/public/image1.jpeg",
-    tools: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"],
+    image: "/public/web1.png",
+    tools: ["HTML", "CSS", "PHP"],
   },
   {
-    title: "Kloudtrack",
-    description:
-      "A Weather Monitoring Application that receives real time data from the  weather station of Kloudtech.",
+    title: "Student Data",
+    description: "A Simple Project that use AJAX for fetching data.",
     type: "Web Application",
-    image: "/public/image1.jpeg",
-    tools: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"],
+    image: "/public/web1.png",
+    tools: ["HTML", "CSS", "JavaScript", "AJAX"],
   },
   {
-    title: "Kloudtrack",
+    title: "Grocery Buddy",
     description:
-      "A Weather Monitoring Application that receives real time data from the  weather station of Kloudtech.",
+      "A React Application that lists the products that the user wants to buy during his/her shopping.",
     type: "Web Application",
-    image: "/public/image1.jpeg",
-    tools: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"],
-  },
-  {
-    title: "Kloudtrack",
-    description:
-      "A Weather Monitoring Application that receives real time data from the  weather station of Kloudtech.",
-    type: "Web Application",
-    image: "/public/image1.jpeg",
-    tools: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"],
+    image: "/public/web1.png",
+    tools: ["React", "HTML", "CSS", "TailwindCSS", "JavaScript"],
   },
 ];
