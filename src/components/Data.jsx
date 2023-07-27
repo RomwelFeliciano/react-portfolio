@@ -152,7 +152,7 @@ export const projects = [
     description:
       "A Weather Monitoring Application that receives real time data from the  weather station of Kloudtech.",
     type: "Web Application",
-    image: "/web1.png",
+    image: "3.png",
     tools: ["HTML", "CSS", "JavaScript", "jQuery", "ChartJS", "Bootstrap"],
   },
   {
@@ -160,14 +160,14 @@ export const projects = [
     description:
       "A Business Website of Kloudtech to show who and what is the company all about.",
     type: "Website",
-    image: "/web1.png",
+    image: "2.png",
     tools: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"],
   },
   {
     title: "Pic-Sell Planet Web Application",
     description: "A Online Multimedia Services for Photographers.",
     type: "Web Application",
-    image: "/web1.png",
+    image: "1.png",
     tools: ["HTML", "CSS", "JavaScript", "jQuery", "PHP", "MySQL"],
   },
   {
@@ -175,14 +175,14 @@ export const projects = [
     description:
       "A PHP Project that lets the user login and play the game to guess the right number, it has 3 difficulties (easy, medium, hard).",
     type: "Web Application",
-    image: "/web1.png",
+    image: "5.png",
     tools: ["HTML", "CSS", "PHP"],
   },
   {
     title: "Student Data",
     description: "A Simple Project that use AJAX for fetching data.",
     type: "Web Application",
-    image: "/web1.png",
+    image: "5.png",
     tools: ["HTML", "CSS", "JavaScript", "AJAX"],
   },
   {
@@ -190,7 +190,7 @@ export const projects = [
     description:
       "A React Application that lists the products that the user wants to buy during his/her shopping.",
     type: "Web Application",
-    image: "/web1.png",
+    image: "4.png",
     tools: ["React", "HTML", "CSS", "TailwindCSS", "JavaScript"],
   },
 ];
