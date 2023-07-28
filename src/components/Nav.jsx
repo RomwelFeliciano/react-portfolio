@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Button from "./Button";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
+import { BsMoonStarsFill } from "react-icons/bs";
 
 const Nav = () => {
   let Links = [
@@ -44,9 +45,9 @@ const Nav = () => {
               </a>
             </li>
           ))}
-          {/* <a href="/resume.pdf" download="Resume-Romwel-Feliciano">
-            <Button>Resume</Button>
-          </a> */}
+          <Button>
+            <BsMoonStarsFill />
+          </Button>
         </ul>
       </div>
     </div>

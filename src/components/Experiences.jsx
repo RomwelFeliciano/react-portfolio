@@ -23,7 +23,7 @@ const Experiences = () => {
         <div className="flex gap-5 items-center justify-center my-2">
           <button
             className={
-              "px-4 py-2 text-main rounded-md border-solid border-2 border-accent " +
+              "px-4 py-2 text-main rounded-md border-solid border-2 border-accent hover:bg-accent duration-200 ease-in " +
               (showContent === "education" ? "bg-accent" : "")
             }
             onClick={handleShowEducation}
@@ -32,7 +32,7 @@ const Experiences = () => {
           </button>
           <button
             className={
-              "px-4 py-2 text-main rounded-md border-solid border-2 border-accent " +
+              "px-4 py-2 text-main rounded-md border-solid border-2 border-accent hover:bg-accent duration-200 ease-in " +
               (showContent === "work" ? "bg-accent" : "")
             }
             onClick={handleShowWork}

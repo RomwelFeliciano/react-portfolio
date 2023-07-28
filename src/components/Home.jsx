@@ -23,7 +23,7 @@ const Home = () => {
           <BsFacebook className="cursor-pointer hover:text-[#4267B2] hover:-translate-y-2 hover:scale-125 duration-300" />
         </a>
         <a
-          href="https://www.instagram.com/rrfeliciano_/"
+          href="https://www.linkedin.com/in/romwel-feliciano-576164218/"
           className="animation-translate"
           target="_blank"
         >
@@ -31,7 +31,7 @@ const Home = () => {
         </a>
 
         <a
-          href="https://www.linkedin.com/in/romwel-feliciano-576164218/"
+          href="https://github.com/RomwelFeliciano"
           className="animation-translate"
           target="_blank"
         >
@@ -64,14 +64,17 @@ const Home = () => {
         <p className="font-normal leading-7 pt-2">{profile.description}</p>
       </div>
       <div className="lg:hidden flex gap-10 text-3xl justify-center items-center py-10 lg:py-0">
-        <a href="#FB" target="_blank">
+        <a href="https://www.facebook.com/Feliciano.Romwel/" target="_blank">
           <BsFacebook className="cursor-pointer hover:text-[#4267B2] hover:scale-125 duration-300" />
         </a>
-        <a href="#LI" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/romwel-feliciano-576164218/"
+          target="_blank"
+        >
           <BsLinkedin className="cursor-pointer hover:text-[#0077B5] hover:scale-125 duration-300" />
         </a>
 
-        <a href="#GH" target="_blank">
+        <a href="https://github.com/RomwelFeliciano" target="_blank">
           <BsGithub className="cursor-pointer hover:text-[#1D1D1D] hover:scale-125 duration-300" />
         </a>
       </div>

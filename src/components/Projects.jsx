@@ -1,7 +1,33 @@
+import { useState, useEffect } from "react";
 import React from "react";
 import { projects } from "./Data";
 
 const Projects = () => {
+  const [showProject, setShowProject] = useState("all");
+  const [project, setProject] = useState(projects);
+  const [filtered, setFiltered] = useState(projects);
+
+  useEffect(() => {
+    if (showProject === "") {
+      setFiltered(project);
+      return;
+    }
+    const filtered = project.filter((prj) => prj.type.includes(showProject));
+    setFiltered(filtered);
+  }, [showProject]);
+
+  const handleShowAll = () => {
+    setShowProject("");
+  };
+
+  const handleShowWebsite = () => {
+    setShowProject("Website");
+  };
+
+  const handleShowWebApp = () => {
+    setShowProject("Web Application");
+  };
+
   return (
     <section
       id="Projects"
@@ -10,13 +36,42 @@ const Projects = () => {
       <div className="flex flex-col justify-center items-center gap-2">
         <h2 className="text-xl text-second">Projects I Have</h2>
         <h1 className="text-2xl text-main font-bold">My Outputs</h1>
+        <div className="flex gap-5 items-center justify-center my-2">
+          <button
+            className={
+              "w-[160px] px-4 py-2 text-main rounded-md border-solid border-2 border-accent hover:bg-accent duration-200 ease-in " +
+              (showProject === "" ? "bg-accent" : "")
+            }
+            onClick={handleShowAll}
+          >
+            All Projects
+          </button>
+          <button
+            className={
+              "w-[160px] px-4 py-2 text-main rounded-md border-solid border-2 border-accent hover:bg-accent duration-200 ease-in " +
+              (showProject === "Website" ? "bg-accent" : "")
+            }
+            onClick={handleShowWebsite}
+          >
+            Website
+          </button>
+          <button
+            className={
+              "w-[160px] px-4 py-2 text-main rounded-md border-solid border-2 border-accent hover:bg-accent duration-200 ease-in " +
+              (showProject === "Web Application" ? "bg-accent" : "")
+            }
+            onClick={handleShowWebApp}
+          >
+            Web Application
+          </button>
+        </div>
       </div>
       {/* Container of Cards */}
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-3 rounded-sm">
         {/* Cards for each data 
           Mapping Starts Here*/}
-        {projects &&
-          projects.map((proj) => (
+        {filtered &&
+          filtered.map((proj) => (
             <div className="bg-white shadow-sm rounded-sm" key={proj.title}>
               <div className="p-4">
                 <img src={proj.image} alt="" className="object-cover rounded" />

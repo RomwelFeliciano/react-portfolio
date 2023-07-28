@@ -164,6 +164,14 @@ export const projects = [
     tools: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"],
   },
   {
+    title: "Grocery Buddy",
+    description:
+      "A React Application that lists the products that the user wants to buy during his/her shopping.",
+    type: "Web Application",
+    image: "4.png",
+    tools: ["React", "HTML", "CSS", "TailwindCSS", "JavaScript"],
+  },
+  {
     title: "Pic-Sell Planet Web Application",
     description: "A Online Multimedia Services for Photographers.",
     type: "Web Application",
@@ -184,13 +192,5 @@ export const projects = [
     type: "Web Application",
     image: "5.png",
     tools: ["HTML", "CSS", "JavaScript", "AJAX"],
-  },
-  {
-    title: "Grocery Buddy",
-    description:
-      "A React Application that lists the products that the user wants to buy during his/her shopping.",
-    type: "Web Application",
-    image: "4.png",
-    tools: ["React", "HTML", "CSS", "TailwindCSS", "JavaScript"],
   },
 ];
