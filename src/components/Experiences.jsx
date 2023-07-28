@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { education, work } from "./Data";
+import { motion } from "framer-motion";
 
 const Experiences = () => {
   const [showContent, setShowContent] = useState("education");
@@ -41,14 +42,20 @@ const Experiences = () => {
           </button>
         </div>
       </div>
-      <div className="w-full flex flex-col gap-5 p-3 rounded-sm">
+      <motion.div layout className="w-full flex flex-col gap-5 p-3 rounded-sm">
+
         {/* Cards to map */}
 
         {/* Cards for Education */}
         {showContent === "education" &&
           education &&
           education.map((educ) => (
-            <div
+            <motion.div
+            layout
+                animate={{ opacity: 1 }}
+                initial={{ opacity: 0 }}
+                exit={{ opacity: 0 }}
+                transition={{duration: 0.8}}
               className="w-full flex flex-col justify-center items-start rounded-sm bg-white shadow-lg lg:flex-row lg:justify-start lg:items-center"
               key={educ.level}
             >
@@ -76,14 +83,19 @@ const Experiences = () => {
                     ))}
                 </ul>
               </div>
-            </div>
+            </motion.div>
           ))}
 
         {/* Cards for Work */}
         {showContent === "work" &&
           work &&
           work.map((job) => (
-            <div
+            <motion.div
+            layout
+                animate={{ opacity: 1 }}
+                initial={{ opacity: 0 }}
+                exit={{ opacity: 0 }}
+                transition={{duration: 0.8}}
               className="w-full flex flex-col justify-center items-start rounded-sm bg-white shadow-lg lg:flex-row lg:justify-start lg:items-center"
               key={job.level}
             >
@@ -110,9 +122,9 @@ const Experiences = () => {
                     ))}
                 </ul>
               </div>
-            </div>
+            </motion.div>
           ))}
-      </div>
+      </motion.div>
     </section>
   );
 };
