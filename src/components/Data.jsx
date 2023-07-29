@@ -134,15 +134,26 @@ export const work = [
     year: "March 2023 - Present",
     image:
       "https://scontent.fmnl17-1.fna.fbcdn.net/v/t39.30808-6/358541226_247849084766856_2409439841455213300_n.jpg?_nc_cat=101&cb=99be929b-3346023f&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeGg-SvuLY_nuuAEYNwuGH67K-2-_MK8pxgr7b78wrynGDnm_3pnYOE31kI_gmpd16slWyuT7k1jbQsbsQdrti63&_nc_ohc=A2IUVdjNYTIAX_YmqPj&_nc_ht=scontent.fmnl17-1.fna&oh=00_AfAYTlC2Sld-_uGsku5L1NchbMMZmFeQAwfWHGPArdDXkg&oe=64BFC923",
-    tasks: ["Task 1", "Task 2", "Task 3"],
+    tasks: [
+      "Created a mockup design of a business website and web application.",
+      "Implemented the chosen structure of the website in code.",
+      "Handled the website's optimization.",
+      "Consulted and suggested improvements to the website and web app's features.",
+      "Developed admin pages with analytics and charts for the website and web app.",
+    ],
   },
   {
     level: "Work Immersion",
     company: "LGU Orani",
-    role: "IT Support",
+    role: "IT Support/Staff",
     year: "December 2018",
     image: "https://live.staticflickr.com/6005/5947680623_3e8949486d_z.jpg",
-    tasks: ["Task 1", "Task 2", "Task 3"],
+    tasks: [
+      "Encoded and maintained various data in Excel.",
+      "Troubleshoot different offices with LAN Servers.",
+      "Modified the operating systems of each department's devices.",
+      "Assembled and disassembled PC in the Municipal Hall.",
+    ],
   },
 ];
 
@@ -152,7 +163,7 @@ export const projects = [
     description:
       "A Weather Monitoring Application that receives real time data from the  weather station of Kloudtech.",
     type: "Web Application",
-    image: "3.png",
+    image: "images/1.png",
     tools: ["HTML", "CSS", "JavaScript", "jQuery", "ChartJS", "Bootstrap"],
   },
   {
@@ -160,7 +171,7 @@ export const projects = [
     description:
       "A Business Website of Kloudtech to show who and what is the company all about.",
     type: "Website",
-    image: "2.png",
+    image: "images/2.png",
     tools: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"],
   },
   {
@@ -168,14 +179,14 @@ export const projects = [
     description:
       "A React Application that lists the products that the user wants to buy during his/her shopping.",
     type: "Web Application",
-    image: "4.png",
+    image: "images/4.png",
     tools: ["React", "HTML", "CSS", "TailwindCSS", "JavaScript"],
   },
   {
     title: "Pic-Sell Planet Web Application",
     description: "A Online Multimedia Services for Photographers.",
     type: "Web Application",
-    image: "1.png",
+    image: "images/3.png",
     tools: ["HTML", "CSS", "JavaScript", "jQuery", "PHP", "MySQL"],
   },
   {
@@ -183,14 +194,14 @@ export const projects = [
     description:
       "A PHP Project that lets the user login and play the game to guess the right number, it has 3 difficulties (easy, medium, hard).",
     type: "Web Application",
-    image: "5.png",
+    image: "images/5.png",
     tools: ["HTML", "CSS", "PHP"],
   },
   {
     title: "Student Data",
     description: "A Simple Project that use AJAX for fetching data.",
-    type: "Web Application",
-    image: "5.png",
+    type: "Website",
+    image: "images/6.png",
     tools: ["HTML", "CSS", "JavaScript", "AJAX"],
   },
 ];

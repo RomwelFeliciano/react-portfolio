@@ -43,7 +43,6 @@ const Experiences = () => {
         </div>
       </div>
       <motion.div layout className="w-full flex flex-col gap-5 p-3 rounded-sm">
-
         {/* Cards to map */}
 
         {/* Cards for Education */}
@@ -51,11 +50,11 @@ const Experiences = () => {
           education &&
           education.map((educ) => (
             <motion.div
-            layout
-                animate={{ opacity: 1 }}
-                initial={{ opacity: 0 }}
-                exit={{ opacity: 0 }}
-                transition={{duration: 0.8}}
+              layout
+              animate={{ opacity: 1 }}
+              initial={{ opacity: 0 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.8 }}
               className="w-full flex flex-col justify-center items-start rounded-sm bg-white shadow-lg lg:flex-row lg:justify-start lg:items-center"
               key={educ.level}
             >
@@ -91,11 +90,11 @@ const Experiences = () => {
           work &&
           work.map((job) => (
             <motion.div
-            layout
-                animate={{ opacity: 1 }}
-                initial={{ opacity: 0 }}
-                exit={{ opacity: 0 }}
-                transition={{duration: 0.8}}
+              layout
+              animate={{ opacity: 1 }}
+              initial={{ opacity: 0 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.8 }}
               className="w-full flex flex-col justify-center items-start rounded-sm bg-white shadow-lg lg:flex-row lg:justify-start lg:items-center"
               key={job.level}
             >
@@ -112,7 +111,7 @@ const Experiences = () => {
                 </h2>
                 <h3 className="mb-2 text-md">{job.role}</h3>
                 <h3 className="mb-2 text-md">{job.year}</h3>
-                <h3 className="mb-2 text-md">Tasks</h3>
+                <h3 className="mb-2 text-md">Key Responsibilities</h3>
                 <ul className="ml-5">
                   {job.tasks &&
                     job.tasks.map((task) => (
