@@ -6,7 +6,7 @@ const Home = () => {
   const profile = {
     name: "Romwel Reyes Feliciano",
     description:
-      "A front-end developer who graduated at Bataan Peninsula State University. At the moment, I am working as an intern at Kloudtech as I continue to learn necessary programming skills needed. In addition, I am also acquiring knowledge about various web designs and layout. Consequently, I am striving to hone my proficiency in using popular frameworks and libraries.",
+      "A front-end web developer who graduated at Bataan Peninsula State University. At the moment, I am working as an intern at Kloudtech as I continue to learn necessary programming skills needed. In addition, I am also acquiring knowledge about various web designs and layout. Consequently, I am striving to hone my proficiency in using popular frameworks and libraries.",
   };
 
   return (
@@ -51,9 +51,9 @@ const Home = () => {
             sequence={[
               "Web Developer",
               2000,
-              "UI/UX Designer",
+              "Software Developer",
               2000,
-              "Gamer",
+              "UI/UX Designer",
               2000,
             ]}
             wrapper="div"
