@@ -14,7 +14,7 @@ const Home = () => {
       id="Home"
       className="w-full min-h-screen items-center grid grid-rows-1 grid-cols-1 lg:grid-cols-[10%_40%_50%] px-10"
     >
-      <div className="w-[200px] hidden lg:flex md:flex-col gap-10 text-3xl justify-center items-center">
+      <div className="w-[200px] hidden lg:flex md:flex-col gap-10 text-3xl justify-center items-center dark:text-white transition-all duration-500 ease-in">
         <a
           href="https://www.facebook.com/Feliciano.Romwel/"
           className="animation-translate"
@@ -45,7 +45,7 @@ const Home = () => {
         <h2 className="md:text-5xl text-4xl font-bold text-main lg:pt-0 pt-5">
           {profile.name}
         </h2>
-        <h3 className="typed flex lg:justify-start justify-center text-2xl gap-2 font-normal text-second md:text-4xl pt-2">
+        <h3 className="typed flex lg:justify-start justify-center text-2xl gap-2 font-normal text-second md:text-4xl pt-2 dark:text-night transition-all duration-500 ease-in">
           I'm a
           <TypeAnimation
             sequence={[
@@ -61,7 +61,9 @@ const Home = () => {
             repeat={Infinity}
           />
         </h3>
-        <p className="font-normal leading-7 pt-2">{profile.description}</p>
+        <p className="font-normal leading-7 pt-2 dark:text-white transition-all duration-500 ease-in">
+          {profile.description}
+        </p>
       </div>
       <div className="lg:hidden flex gap-10 text-3xl justify-center items-center py-10 lg:py-0">
         <a href="https://www.facebook.com/Feliciano.Romwel/" target="_blank">

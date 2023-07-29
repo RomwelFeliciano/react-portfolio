@@ -35,13 +35,17 @@ const Projects = () => {
       className="container flex flex-col justify-start items-center p-2 md:p-10 min-h-screen"
     >
       <div className="flex flex-col justify-center items-center gap-2">
-        <h2 className="text-xl text-second">Projects I Have</h2>
+        <h2 className="text-xl text-second dark:text-white transition-all duration-500 ease-in">
+          Projects I Have
+        </h2>
         <h1 className="text-2xl text-main font-bold">My Outputs</h1>
         <div className="flex flex-wrap gap-5 items-center justify-center my-2">
           <button
             className={
-              "w-[160px] px-4 py-2 text-main rounded-md border-solid border-2 border-accent hover:bg-accent duration-200 ease-in " +
-              (showProject === "" ? "bg-accent" : "")
+              "w-[160px] px-4 py-2 text-main rounded-md border-solid border-2 border-accent hover:bg-accent dark:hover:bg-black dark:border-black duration-200 ease-in " +
+              (showProject === ""
+                ? "bg-accent dark:bg-black transition-all duration-500 ease-in"
+                : "")
             }
             onClick={handleShowAll}
           >
@@ -49,8 +53,10 @@ const Projects = () => {
           </button>
           <button
             className={
-              "w-[160px] px-4 py-2 text-main rounded-md border-solid border-2 border-accent hover:bg-accent duration-200 ease-in " +
-              (showProject === "Website" ? "bg-accent" : "")
+              "w-[160px] px-4 py-2 text-main rounded-md border-solid border-2 border-accent hover:bg-accent dark:hover:bg-black dark:border-black duration-200 ease-in " +
+              (showProject === "Website"
+                ? "bg-accent dark:bg-black transition-all duration-500 ease-in"
+                : "")
             }
             onClick={handleShowWebsite}
           >
@@ -58,8 +64,10 @@ const Projects = () => {
           </button>
           <button
             className={
-              "w-[160px] px-4 py-2 text-main rounded-md border-solid border-2 border-accent hover:bg-accent duration-200 ease-in " +
-              (showProject === "Web Application" ? "bg-accent" : "")
+              "w-[160px] px-4 py-2 text-main rounded-md border-solid border-2 border-accent hover:bg-accent dark:hover:bg-black dark:border-black duration-200 ease-in " +
+              (showProject === "Web Application"
+                ? "bg-accent dark:bg-black transition-all duration-500 ease-in"
+                : "")
             }
             onClick={handleShowWebApp}
           >
@@ -82,7 +90,7 @@ const Projects = () => {
                 animate={{ opacity: 1 }}
                 initial={{ opacity: 0 }}
                 exit={{ opacity: 0 }}
-                className="bg-white shadow-sm rounded-sm"
+                className="bg-white shadow-sm rounded-sm dark:bg-black transition-colors duration-500 ease-in"
                 key={proj.title}
               >
                 <div className="p-4">
@@ -94,7 +102,9 @@ const Projects = () => {
                 </div>
                 <div className="px-5 pb-3">
                   <h1 className="text-2xl text-main">{proj.title}</h1>
-                  <p className="text-md">{proj.description}</p>
+                  <p className="text-md dark:text-white transition-colors duration-500 ease-in">
+                    {proj.description}
+                  </p>
                 </div>
                 <div className="px-5 pb-4">
                   <div className="flex flex-wrap items-center gap-3">

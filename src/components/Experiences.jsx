@@ -19,13 +19,17 @@ const Experiences = () => {
       className="container flex flex-col justify-center items-center p-2 md:p-10 min-h-screen"
     >
       <div className="flex flex-col justify-center items-center gap-2">
-        <h2 className="text-xl text-second">Experiences I Have in Life</h2>
+        <h2 className="text-xl text-second dark:text-white transition-all duration-500 ease-in">
+          Experiences I Have in Life
+        </h2>
         <h1 className="text-2xl text-main font-bold">My Journey</h1>
         <div className="flex gap-5 items-center justify-center my-2">
           <button
             className={
-              "px-4 py-2 text-main rounded-md border-solid border-2 border-accent hover:bg-accent duration-200 ease-in " +
-              (showContent === "education" ? "bg-accent" : "")
+              "px-4 py-2 text-main rounded-md border-solid border-2 border-accent hover:bg-accent dark:hover:bg-black dark:border-black duration-200 ease-in " +
+              (showContent === "education"
+                ? "bg-accent dark:bg-black transition-all duration-500 ease-in"
+                : "")
             }
             onClick={handleShowEducation}
           >
@@ -33,8 +37,10 @@ const Experiences = () => {
           </button>
           <button
             className={
-              "px-4 py-2 text-main rounded-md border-solid border-2 border-accent hover:bg-accent duration-200 ease-in " +
-              (showContent === "work" ? "bg-accent" : "")
+              "px-4 py-2 text-main rounded-md border-solid border-2 border-accent hover:bg-accent dark:hover:bg-black dark:border-black duration-200 ease-in " +
+              (showContent === "work"
+                ? "bg-accent dark:bg-black transition-all duration-500 ease-in"
+                : "")
             }
             onClick={handleShowWork}
           >
@@ -55,7 +61,7 @@ const Experiences = () => {
               initial={{ opacity: 0 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.8 }}
-              className="w-full flex flex-col justify-center items-start rounded-sm bg-white shadow-lg lg:flex-row lg:justify-start lg:items-center"
+              className="w-full flex flex-col justify-center items-start rounded-sm bg-white shadow-lg lg:flex-row lg:justify-start lg:items-center dark:bg-black transition-all duration-500 ease-in"
               key={educ.level}
             >
               <div className="p-4">
@@ -65,7 +71,7 @@ const Experiences = () => {
                   alt=""
                 />
               </div>
-              <div className="flex flex-col justify-start px-4 pb-4">
+              <div className="flex flex-col justify-start px-4 pb-4 dark:text-white transition-all duration-500 ease-in">
                 <h2 className="mb-2 text-xl">
                   {educ.level} -{" "}
                   <span className="text-main">{educ.school}</span>
@@ -95,7 +101,7 @@ const Experiences = () => {
               initial={{ opacity: 0 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.8 }}
-              className="w-full flex flex-col justify-center items-start rounded-sm bg-white shadow-lg lg:flex-row lg:justify-start lg:items-center"
+              className="w-full flex flex-col justify-center items-start rounded-sm bg-white shadow-lg lg:flex-row lg:justify-start lg:items-center dark:bg-black transition-all duration-500 ease-in"
               key={job.level}
             >
               <div className="p-4">
@@ -105,7 +111,7 @@ const Experiences = () => {
                   alt=""
                 />
               </div>
-              <div className="flex flex-col justify-start px-4 pb-4">
+              <div className="flex flex-col justify-start px-4 pb-4 dark:text-white transition-all duration-500 ease-in">
                 <h2 className="mb-2 text-xl">
                   {job.level} - <span className="text-main">{job.company}</span>
                 </h2>

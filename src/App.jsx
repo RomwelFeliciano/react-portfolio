@@ -9,7 +9,7 @@ import ContactUs from "./components/ContactUs";
 
 const App = () => {
   return (
-    <div className="bg-body font-inder">
+    <div className="bg-body dark:bg-[#0B0E14] font-inder transition-all duration-500 ease-in">
       <Nav />
       <main className="flex flex-col justify-center items-center">
         <Home />

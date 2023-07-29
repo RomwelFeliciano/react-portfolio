@@ -8,11 +8,13 @@ const Skills = () => {
       className="container flex flex-col justify-center items-center p-2 md:p-10 min-h-screen"
     >
       <div className="flex flex-col justify-center items-center gap-2">
-        <h2 className="text-xl text-second">Skills I Have</h2>
+        <h2 className="text-xl text-second dark:text-night transition-all duration-500 ease-in">
+          Skills I Have
+        </h2>
         <h1 className="text-2xl text-main font-bold">My Expertise</h1>
       </div>
       <div className="w-full mt-5 grid grid-cols-1 md:grid-cols-2 gap-5 p-3">
-        <div className="w-full bg-white shadow-lg p-2 md:pb-14 rounded-sm">
+        <div className="w-full bg-white dark:bg-black transition-all duration-500 ease-in shadow-lg p-2 md:pb-14 rounded-sm">
           <h1 className="text-center text-2xl md:py-3 text-main">
             Front-end Development
           </h1>
@@ -22,7 +24,7 @@ const Skills = () => {
                 <div className="flex justify-center items-center">
                   <img className="w-10" src={skill.image} alt="" />
                 </div>
-                <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-center dark:text-white transition-all duration-500 ease-in">
                   <h2>
                     {skill.name} - {skill.level}
                   </h2>
@@ -32,7 +34,7 @@ const Skills = () => {
             ))}
           </div>
         </div>
-        <div className="w-full bg-white shadow-lg p-2 md:pb-14 rounded-sm">
+        <div className="w-full bg-white dark:bg-black transition-all duration-500 ease-in shadow-lg p-2 md:pb-14 rounded-sm">
           <h1 className="text-center text-2xl md:py-3 text-main">
             Back-end Development
           </h1>
@@ -42,7 +44,7 @@ const Skills = () => {
                 <div className="flex justify-center items-center">
                   <img className="w-10" src={skill.image} alt="" />
                 </div>
-                <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-center dark:text-white transition-all duration-500 ease-in">
                   <h2>
                     {skill.name} - {skill.level}
                   </h2>
