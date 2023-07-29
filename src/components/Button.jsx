@@ -1,7 +1,9 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { BsMoonStarsFill } from "react-icons/bs";
+import { FaSun } from "react-icons/fa";
 
-const Button = (props) => {
+const Button = () => {
   const [theme, setTheme] = useState("light");
 
   useEffect(() => {
@@ -18,10 +20,14 @@ const Button = (props) => {
 
   return (
     <button
-      className="bg-main p-3 text-lg rounded-full md:ml-8 hover:bg-accent hover:text-main duration-500"
+      className="bg-main p-2 rounded-full md:ml-8 hover:bg-accent hover:text-main duration-500 dark:hover:bg-white"
       onClick={handleDarkMode}
     >
-      {props.children}
+      {theme === "dark" ? (
+        <FaSun className="text-2xl" />
+      ) : (
+        <BsMoonStarsFill className="text-2xl" />
+      )}
     </button>
   );
 };
