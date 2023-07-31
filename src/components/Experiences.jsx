@@ -26,10 +26,10 @@ const Experiences = () => {
         <div className="flex gap-5 items-center justify-center my-2">
           <button
             className={
-              "px-4 py-2 text-main rounded-md border-solid border-2 border-accent hover:bg-accent dark:hover:bg-main dark:border-main dark:text-white dark:hover:text-black duration-200 ease-in " +
+              "px-4 py-2 text-main rounded-md border-solid border-2 border-accent hover:bg-accent dark:hover:bg-main dark:border-main  dark:hover:text-black duration-200 ease-in " +
               (showContent === "education"
                 ? "bg-accent dark:bg-main dark:text-black transition-all duration-500 ease-in"
-                : "")
+                : "dark:text-white")
             }
             onClick={handleShowEducation}
           >
@@ -37,10 +37,10 @@ const Experiences = () => {
           </button>
           <button
             className={
-              "px-4 py-2 text-main rounded-md border-solid border-2 border-accent hover:bg-accent dark:hover:bg-main dark:border-main dark:text-white dark:hover:text-black duration-200 ease-in " +
+              "px-4 py-2 text-main rounded-md border-solid border-2 border-accent hover:bg-accent dark:hover:bg-main dark:border-main  dark:hover:text-black duration-200 ease-in " +
               (showContent === "work"
                 ? "bg-accent dark:bg-main dark:text-black transition-all duration-500 ease-in"
-                : "")
+                : "dark:text-white")
             }
             onClick={handleShowWork}
           >
