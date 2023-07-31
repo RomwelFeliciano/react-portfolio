@@ -14,7 +14,7 @@ const Home = () => {
       id="Home"
       className="w-full min-h-screen items-center grid grid-rows-1 grid-cols-1 lg:grid-cols-[10%_40%_50%] px-10"
     >
-      <div className="w-[200px] hidden lg:flex md:flex-col gap-10 text-3xl justify-center items-center dark:text-white transition-all duration-500 ease-in">
+      <div className="w-[200px] hidden lg:flex md:flex-col gap-10 text-3xl justify-center items-center dark:text-main transition-all duration-500 ease-in">
         <a
           href="https://www.facebook.com/Feliciano.Romwel/"
           className="animation-translate"
@@ -35,7 +35,7 @@ const Home = () => {
           className="animation-translate"
           target="_blank"
         >
-          <BsGithub className="cursor-pointer hover:text-[#1D1D1D] hover:-translate-y-2 hover:scale-125 duration-300" />
+          <BsGithub className="cursor-pointer hover:text-[#1D1D1D] hover:-translate-y-2 hover:scale-125 duration-300 dark:hover:text-white" />
         </a>
       </div>
       <div className="animate-soft lg:mt-0 mt-24 relative mx-auto bg-gradient-to-b from-[#ffffff] rounded-full md:w-80 md:h-80 w-72 h-72 overflow-hidden">
@@ -67,17 +67,17 @@ const Home = () => {
       </div>
       <div className="lg:hidden flex gap-10 text-3xl justify-center items-center py-10 lg:py-0">
         <a href="https://www.facebook.com/Feliciano.Romwel/" target="_blank">
-          <BsFacebook className="cursor-pointer hover:text-[#4267B2] hover:scale-125 duration-300" />
+          <BsFacebook className="cursor-pointer hover:text-[#4267B2] hover:scale-125 duration-300 dark:text-main" />
         </a>
         <a
           href="https://www.linkedin.com/in/romwel-feliciano-576164218/"
           target="_blank"
         >
-          <BsLinkedin className="cursor-pointer hover:text-[#0077B5] hover:scale-125 duration-300" />
+          <BsLinkedin className="cursor-pointer hover:text-[#0077B5] hover:scale-125 duration-300 dark:text-main" />
         </a>
 
         <a href="https://github.com/RomwelFeliciano" target="_blank">
-          <BsGithub className="cursor-pointer hover:text-[#1D1D1D] hover:scale-125 duration-300" />
+          <BsGithub className="cursor-pointer hover:text-[#1D1D1D] hover:scale-125 duration-300 dark:text-main" />
         </a>
       </div>
     </section>
