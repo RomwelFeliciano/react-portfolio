@@ -42,10 +42,10 @@ const Home = () => {
         <img className="relative object-cover" src="./profile.png" alt="" />
       </div>
       <div className="xl:w-100 xl:w-3/4 lg:text-left text-center">
-        <h2 className="md:text-5xl text-4xl font-bold text-main lg:pt-0 pt-5">
+        <h2 className="md:text-5xl text-3xl font-bold text-main lg:pt-0 pt-5">
           {profile.name}
         </h2>
-        <h3 className="typed flex lg:justify-start justify-center text-2xl gap-2 font-normal text-second md:text-4xl pt-2 dark:text-night transition-all duration-500 ease-in">
+        <h3 className="typed flex lg:justify-start justify-center text-xl gap-2 font-normal text-second md:text-4xl pt-2 dark:text-night transition-all duration-500 ease-in">
           I'm a
           <TypeAnimation
             sequence={[
