@@ -42,9 +42,9 @@ const Projects = () => {
         <div className="flex flex-wrap gap-5 items-center justify-center my-2">
           <button
             className={
-              "w-[160px] px-4 py-2 text-main rounded-md border-solid border-2 border-accent hover:bg-accent dark:hover:bg-black dark:border-black duration-200 ease-in " +
+              "w-[160px] px-4 py-2 text-main rounded-md border-solid border-2 border-accent hover:bg-accent dark:hover:bg-main dark:border-main dark:text-white dark:hover:text-black duration-200 ease-in " +
               (showProject === ""
-                ? "bg-accent dark:bg-black transition-all duration-500 ease-in"
+                ? "bg-accent dark:bg-main dark:text-black transition-all duration-500 ease-in"
                 : "")
             }
             onClick={handleShowAll}
@@ -53,9 +53,9 @@ const Projects = () => {
           </button>
           <button
             className={
-              "w-[160px] px-4 py-2 text-main rounded-md border-solid border-2 border-accent hover:bg-accent dark:hover:bg-black dark:border-black duration-200 ease-in " +
+              "w-[160px] px-4 py-2 text-main rounded-md border-solid border-2 border-accent hover:bg-accent dark:hover:bg-main dark:border-main dark:text-white dark:hover:text-black duration-200 ease-in " +
               (showProject === "Website"
-                ? "bg-accent dark:bg-black transition-all duration-500 ease-in"
+                ? "bg-accent dark:bg-main dark:text-black transition-all duration-500 ease-in"
                 : "")
             }
             onClick={handleShowWebsite}
@@ -64,9 +64,9 @@ const Projects = () => {
           </button>
           <button
             className={
-              "w-[160px] px-4 py-2 text-main rounded-md border-solid border-2 border-accent hover:bg-accent dark:hover:bg-black dark:border-black duration-200 ease-in " +
+              "w-[160px] px-4 py-2 text-main rounded-md border-solid border-2 border-accent hover:bg-accent dark:hover:bg-main dark:border-main dark:text-white dark:hover:text-black duration-200 ease-in " +
               (showProject === "Web Application"
-                ? "bg-accent dark:bg-black transition-all duration-500 ease-in"
+                ? "bg-accent dark:bg-main dark:text-black transition-all duration-500 ease-in"
                 : "")
             }
             onClick={handleShowWebApp}
