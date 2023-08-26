@@ -129,7 +129,7 @@ export const work = [
     level: "OJT and Internship",
     company: "Kloudtech Corp.",
     role: "Front-End Developer and UI/UX Designer",
-    year: "March 2023 - Present",
+    year: "March 2023 - August 2023",
     image: "images/kloudtech.png",
     tasks: [
       "Created a mockup design of a business website and web application.",
