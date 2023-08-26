@@ -102,8 +102,7 @@ export const education = [
     course:
       "Bachelor of Science in Information Technology Major in Network and Web Application",
     year: "2019 - 2023",
-    image:
-      "https://punto.com.ph/wp-content/uploads/2020/05/2C91982F-F4E0-45B9-8973-ECCE8B497EF3.png",
+    image: "images/bpsu.png",
     awards: [
       "Dean's Lister - 1st and 2nd Semester SY 2022-2023",
       "Dean's Lister - 1st and 2nd Semester SY 2021-2022",
@@ -116,8 +115,7 @@ export const education = [
     school: "ACLC College of Balanga",
     course: "TVL - Information Communications Technology",
     year: "2017 - 2019",
-    image:
-      "https://scontent.fmnl17-1.fna.fbcdn.net/v/t1.6435-9/31968252_1174306216044319_1440019323652407296_n.jpg?_nc_cat=100&cb=99be929b-3346023f&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeG5YtEgRuEhpYzxaKkq9pTYbiI2EXhA-l5uIjYReED6XrqDDHb_KCvW41X1wUGPSNCyxdw-tqiMKwbf7Iu0bJjV&_nc_ohc=S7ZycWfV4ggAX-_A_18&_nc_ht=scontent.fmnl17-1.fna&oh=00_AfDbEOk1CO9Lu88bEufVIQAdxFKFta4dDlsf5kxkksqb5A&oe=64E1E905",
+    image: "images/aclc.png",
     awards: [
       "With Highest Honors - Grade 12",
       "Most Outstanding Award SY 2018-2019",
@@ -132,8 +130,7 @@ export const work = [
     company: "Kloudtech Corp.",
     role: "Front-End Developer and UI/UX Designer",
     year: "March 2023 - Present",
-    image:
-      "https://scontent.fmnl17-1.fna.fbcdn.net/v/t39.30808-6/358541226_247849084766856_2409439841455213300_n.jpg?_nc_cat=101&cb=99be929b-3346023f&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeGg-SvuLY_nuuAEYNwuGH67K-2-_MK8pxgr7b78wrynGDnm_3pnYOE31kI_gmpd16slWyuT7k1jbQsbsQdrti63&_nc_ohc=A2IUVdjNYTIAX_YmqPj&_nc_ht=scontent.fmnl17-1.fna&oh=00_AfAYTlC2Sld-_uGsku5L1NchbMMZmFeQAwfWHGPArdDXkg&oe=64BFC923",
+    image: "images/kloudtech.png",
     tasks: [
       "Created a mockup design of a business website and web application.",
       "Implemented the chosen structure of the website in code.",
@@ -147,7 +144,7 @@ export const work = [
     company: "LGU Orani",
     role: "IT Support/Staff",
     year: "December 2018",
-    image: "https://live.staticflickr.com/6005/5947680623_3e8949486d_z.jpg",
+    image: "images/orani.png",
     tasks: [
       "Encoded and maintained various data in Excel.",
       "Troubleshoot different offices with LAN Servers.",
