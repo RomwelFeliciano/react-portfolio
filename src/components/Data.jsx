@@ -37,21 +37,21 @@ export const frontend = [
   {
     name: "Tailwind CSS",
     level: "Basic",
-    experience: "5 months",
+    experience: "7 months",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
   },
   {
     name: "React",
     level: "Basic",
-    experience: "5 months",
+    experience: "7 months",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   },
   {
     name: "Git",
     level: "Intermediate",
-    experience: "2 years",
+    experience: "4 years",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
   },
@@ -60,8 +60,8 @@ export const frontend = [
 export const backend = [
   {
     name: "PHP",
-    level: "Basic",
-    experience: "1 year",
+    level: "Intermediate",
+    experience: "2 years",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
   },
