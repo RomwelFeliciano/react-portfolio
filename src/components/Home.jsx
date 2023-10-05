@@ -51,7 +51,7 @@ const Home = () => {
             sequence={[
               "Web Developer",
               2000,
-              "Software Developer",
+              "College Instructor",
               2000,
               "UI/UX Designer",
               2000,

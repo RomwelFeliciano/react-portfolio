@@ -126,10 +126,21 @@ export const education = [
 
 export const work = [
   {
+    level: "Part-Time Contract (One Semester)",
+    company: "Bataan Peninsula State University",
+    role: "College Instructor (Online Class)",
+    year: "September 2023 - Present",
+    image: "images/CICT_Picture.jpg",
+    tasks: [
+      "Students were taught the fundamentals of Java computer programming.",
+      "If the lesson can be applied to their systems using PHP programming, I can help the students with their Capstone Project.",
+    ],
+  },
+  {
     level: "OJT and Internship",
     company: "Kloudtech Corp.",
     role: "Front-End Developer and UI/UX Designer",
-    year: "March 2023 - August 2023",
+    year: "March 2023 - September 2023",
     image: "images/kloudtech.png",
     tasks: [
       "Created a mockup design of a business website and web application.",

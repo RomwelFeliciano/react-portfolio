@@ -1,4 +1,3 @@
-import React from "react";
 import { frontend, backend } from "./Data";
 
 const Skills = () => {
@@ -25,10 +24,9 @@ const Skills = () => {
                   <img className="w-10" src={skill.image} alt="" />
                 </div>
                 <div className="flex flex-col justify-center dark:text-white transition-all duration-500 ease-in">
-                  <h2>
-                    {skill.name} - {skill.level}
-                  </h2>
-                  <h2>{skill.experience} experience</h2>
+                  <h2>{skill.name}</h2>
+                  <h2>{skill.level}</h2>
+                  {/* <h2>{skill.experience} experience</h2> */}
                 </div>
               </div>
             ))}
@@ -45,10 +43,9 @@ const Skills = () => {
                   <img className="w-10" src={skill.image} alt="" />
                 </div>
                 <div className="flex flex-col justify-center dark:text-white transition-all duration-500 ease-in">
-                  <h2>
-                    {skill.name} - {skill.level}
-                  </h2>
-                  <h2>{skill.experience} experience</h2>
+                  <h2>{skill.name}</h2>
+                  <h2>{skill.level}</h2>
+                  {/* <h2>{skill.experience} experience</h2> */}
                 </div>
               </div>
             ))}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { education, work } from "./Data";
 import { motion } from "framer-motion";
 
@@ -61,17 +61,17 @@ const Experiences = () => {
               initial={{ opacity: 0 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.8 }}
-              className="w-full flex flex-col justify-center items-start rounded-sm bg-white shadow-lg lg:flex-row lg:justify-start lg:items-center dark:bg-black transition-all duration-500 ease-in"
+              className="w-full flex flex-col justify-center items-start rounded-sm bg-white shadow-lg lg:grid grid-cols-12 lg:justify-start lg:items-center dark:bg-black transition-all duration-500 ease-in"
               key={educ.level}
             >
-              <div className="p-4">
+              <div className="p-4 col-span-5">
                 <img
                   className="w-[485px] h-72 rounded-sm object-cover"
                   src={educ.image}
                   alt=""
                 />
               </div>
-              <div className="flex flex-col justify-start px-4 pb-4 dark:text-white transition-all duration-500 ease-in">
+              <div className="flex flex-col col-span-7 justify-start px-4 pb-4 dark:text-white transition-all duration-500 ease-in">
                 <h2 className="mb-2 text-xl">
                   {educ.level} -{" "}
                   <span className="text-main">{educ.school}</span>
@@ -101,17 +101,17 @@ const Experiences = () => {
               initial={{ opacity: 0 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.8 }}
-              className="w-full flex flex-col justify-center items-start rounded-sm bg-white shadow-lg lg:flex-row lg:justify-start lg:items-center dark:bg-black transition-all duration-500 ease-in"
+              className="w-full flex flex-col justify-center items-start rounded-sm bg-white shadow-lg lg:grid grid-cols-12 lg:justify-start lg:items-center dark:bg-black transition-all duration-500 ease-in"
               key={job.level}
             >
-              <div className="p-4">
+              <div className="p-4 col-span-5">
                 <img
                   className="w-[485px] h-72 rounded-sm object-cover"
                   src={job.image}
                   alt=""
                 />
               </div>
-              <div className="flex flex-col justify-start px-4 pb-4 dark:text-white transition-all duration-500 ease-in">
+              <div className="flex flex-col col-span-7 justify-start px-4 pb-4 dark:text-white transition-all duration-500 ease-in">
                 <h2 className="mb-2 text-xl">
                   {job.level} - <span className="text-main">{job.company}</span>
                 </h2>
